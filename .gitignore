@@ -1,0 +1,22 @@
+# Build / Output
+Output/
+dist/
+build/
+*.exe
+
+# Old versions
+Old ver/
+
+# Installer scripts
+*.iss
+*.ico
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
