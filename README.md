@@ -177,7 +177,7 @@ Turn on **Debug Mode** and check the `CANVAS DIAG` line in the script log to con
 
 ```
 pro-autozoom-ultimate/
-├── Pro_auto_zoom_ultimate_v1.0.lua   # The script
+├── Pro_auto_zoom_ultimate_v1.0.lua                     # The script
 ├── help.html                                           # Full interactive help guide
 ├── README.md                                           # Readme file
 ├── LICENSE                                             # MIT License
