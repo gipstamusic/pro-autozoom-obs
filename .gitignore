@@ -2,7 +2,6 @@
 Output/
 dist/
 build/
-Old ver/
 *.exe
 
 # Old versions
