@@ -1,5 +1,5 @@
-git-- ==============================================================================
--- PRO AUTOZOOM (ULTIMATE COMMUNITY EDITION) - v1.0.0
+-- ==============================================================================
+-- PRO AUTOZOOM ULTIMATE - v1.0.0
 -- Cinematic mouse-tracking zoom engine for OBS Studio (Windows)
 -- Developed by: Gipstamusic
 -- Website: https://lnk.bio/gipstamusic
@@ -114,11 +114,11 @@ local function debug_log(msg, throttle)
         if throttle then
             local now = os.clock()
             if now - last_debug_time > 1.0 then 
-                obs.script_log(obs.LOG_INFO, "ProAutoZoom [TICK]: " .. tostring(msg))
+                obs.script_log(obs.LOG_INFO, "ProAutoZoomUltimate [TICK]: " .. tostring(msg))
                 last_debug_time = now
             end
         else
-            obs.script_log(obs.LOG_INFO, "ProAutoZoom: " .. tostring(msg))
+            obs.script_log(obs.LOG_INFO, "ProAutoZoomUltimate: " .. tostring(msg))
         end
     end
 end
@@ -129,7 +129,7 @@ end
 -- silent unless the user asked for diagnostics.
 local function debug_warn(msg)
     if cache.debug_mode then
-        obs.script_log(obs.LOG_WARNING, "ProAutoZoom: " .. tostring(msg))
+        obs.script_log(obs.LOG_WARNING, "ProAutoZoomUltimate: " .. tostring(msg))
     end
 end
 
@@ -275,7 +275,7 @@ end
 -- GUI
 -- ------------------------------------------------------------------------------
 function script_description()
-    return "<h2>Pro AutoZoom (Ultimate Edition)</h2>" ..
+    return "<h2>Pro AutoZoom Ultimate</h2>" ..
            "<p><i>v" .. SCRIPT_VERSION .. "</i> &mdash; the definitive cinematic mouse-tracking " ..
            "engine for OBS content creators.</p>" ..
            "<p><b>Setup:</b> Select your monitor/window capture source from the dropdown, then " ..
@@ -611,7 +611,7 @@ local function reset_crop_filter()
     local right  = base_w - (left + zw)
     local bottom = base_h - (top + zh)
 
-    local filter = obs.obs_source_get_filter_by_name(source, "CoreAutoZoom_Crop")
+    local filter = obs.obs_source_get_filter_by_name(source, "CoreAutoZoomUltimate_Crop")
     if filter then
         local f_settings = obs.obs_data_create()
         obs.obs_data_set_int(f_settings, "left", math.floor(left))
@@ -803,10 +803,10 @@ function script_load(settings)
     -- silent on this first pass.
     cache.debug_mode = obs.obs_data_get_bool(settings, "debug_mode")
 
-    hk_zoom_id  = obs.obs_hotkey_register_frontend("paz_zoom",  "Pro AutoZoom: Toggle Camera",              hk_zoom)
-    hk_ind_id   = obs.obs_hotkey_register_frontend("paz_ind",   "Pro AutoZoom: Toggle Pointer",             hk_ind)
-    hk_punch_id = obs.obs_hotkey_register_frontend("paz_punch", "Pro AutoZoom: Hold for Detail Zoom (Punch)", hk_punch)
-    hk_pause_id = obs.obs_hotkey_register_frontend("paz_pause", "Pro AutoZoom: Hold to Freeze Camera",      hk_pause)
+    hk_zoom_id  = obs.obs_hotkey_register_frontend("paz_zoom",  "Pro AutoZoom Ultimate: Toggle Camera",              hk_zoom)
+    hk_ind_id   = obs.obs_hotkey_register_frontend("paz_ind",   "Pro AutoZoom Ultimate: Toggle Pointer",             hk_ind)
+    hk_punch_id = obs.obs_hotkey_register_frontend("paz_punch", "Pro AutoZoom Ultimate: Hold for Detail Zoom (Punch)", hk_punch)
+    hk_pause_id = obs.obs_hotkey_register_frontend("paz_pause", "Pro AutoZoom Ultimate: Hold to Freeze Camera",      hk_pause)
     debug_log("script_load: Hotkeys registered.")
 
     local arr_z = obs.obs_data_get_array(settings, "arr_z")
@@ -850,7 +850,7 @@ function script_unload()
     -- The mouse indicator source is created on demand in script_tick and is
     -- never referenced again once the script unloads; remove it explicitly so
     -- it doesn't sit orphaned in the user's scene.
-    local p_source = obs.obs_get_source_by_name("ProAutoZoom_CirclePointer")
+    local p_source = obs.obs_get_source_by_name("ProAutoZoomUltimate_CirclePointer")
     if p_source then
         obs.obs_source_remove(p_source)
         obs.obs_source_release(p_source)
@@ -861,16 +861,16 @@ end
 -- Source / filter helpers
 -- ------------------------------------------------------------------------------
 local function get_or_create_filter(source)
-    local f = obs.obs_source_get_filter_by_name(source, "CoreAutoZoom_Crop")
+    local f = obs.obs_source_get_filter_by_name(source, "CoreAutoZoomUltimate_Crop")
     if not f then
         debug_log("get_or_create_filter: Filter not found, creating new one.")
         local s = obs.obs_data_create()
-        f = obs.obs_source_create_private("crop_filter", "CoreAutoZoom_Crop", s)
+        f = obs.obs_source_create_private("crop_filter", "CoreAutoZoomUltimate_Crop", s)
         obs.obs_data_release(s)
         if f then
             obs.obs_source_filter_add(source, f)
             obs.obs_source_release(f)
-            f = obs.obs_source_get_filter_by_name(source, "CoreAutoZoom_Crop")
+            f = obs.obs_source_get_filter_by_name(source, "CoreAutoZoomUltimate_Crop")
         end
     end
     return f
@@ -1073,7 +1073,7 @@ function script_tick(seconds)
         return
     end
 
-    local p_source = obs.obs_get_source_by_name("ProAutoZoom_CirclePointer")
+    local p_source = obs.obs_get_source_by_name("ProAutoZoomUltimate_CirclePointer")
 
     if show then
         local alpha_val  = math.floor((cache.ind_opacity / 100) * 255)
@@ -1090,7 +1090,7 @@ function script_tick(seconds)
             obs.obs_data_set_obj   (s_settings, "font",  font_obj)
             obs.obs_data_release(font_obj)
 
-            p_source = obs.obs_source_create("text_gdiplus", "ProAutoZoom_CirclePointer", s_settings, nil)
+            p_source = obs.obs_source_create("text_gdiplus", "ProAutoZoomUltimate_CirclePointer", s_settings, nil)
             obs.obs_data_release(s_settings)
 
             if p_source then
@@ -1109,7 +1109,7 @@ function script_tick(seconds)
         end
 
         local target_item  = obs.obs_scene_find_source(scene, cache.source_name)
-        local pointer_item = obs.obs_scene_find_source(scene, "ProAutoZoom_CirclePointer")
+        local pointer_item = obs.obs_scene_find_source(scene, "ProAutoZoomUltimate_CirclePointer")
 
         if target_item and pointer_item then
             local t_info = obs.obs_transform_info()
@@ -1153,7 +1153,7 @@ function script_tick(seconds)
             end
         end
     else
-        local pointer_item = obs.obs_scene_find_source(scene, "ProAutoZoom_CirclePointer")
+        local pointer_item = obs.obs_scene_find_source(scene, "ProAutoZoomUltimate_CirclePointer")
         if pointer_item then
             obs.obs_sceneitem_set_visible(pointer_item, false)
         end

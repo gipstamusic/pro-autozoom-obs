@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pro AutoZoom — Help Guide</title>
+<title>Pro Autozoom Ultimate - Help Guide</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 :root{--bg:#0d0f14;--bg2:#151820;--bg3:#1c2030;--border:#252b3b;--accent:#7c5cfc;--accent2:#a78bfa;--green:#34d399;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;--text:#e2e8f0;--muted:#8892a4;--tag:#1e2538}
@@ -108,7 +108,7 @@ footer a{color:var(--accent2);text-decoration:none}
 <body>
 
 <nav>
-  <div class="nav-brand">🎬 Pro AutoZoom</div>
+  <div class="nav-brand">🎬 Pro Autozoom Ultimate</div>
   <div class="nav-links">
     <a href="#what">What is it?</a>
     <a href="#install">Install</a>
@@ -123,8 +123,8 @@ footer a{color:var(--accent2);text-decoration:none}
 
 <div class="hero">
   <div class="badge">📖 Help Guide · v1.0</div>
-  <h1>Pro <span>AutoZoom</span><br>Ultimate Community Edition</h1>
-  <p>Your camera follows your mouse automatically while you record — no touching OBS mid-session, no editing needed after.</p>
+  <h1>Pro <span>AutoZoom</span><br>Ultimate</h1>
+  <p>Your camera follows your mouse automatically while you record - no touching OBS mid-session, no editing needed after.</p>
   <div class="tags">
     <span class="tag">Windows only</span>
     <span class="tag">OBS 29+</span>
@@ -139,27 +139,27 @@ footer a{color:var(--accent2);text-decoration:none}
 <div class="section" id="what">
   <div class="section-label">Overview</div>
   <h2>What does this actually do?</h2>
-  <p class="lead">Imagine a real camera person holding a camera and zooming in to follow your mouse as you work on screen. That's exactly what this script does — but it's automatic, inside OBS, every single frame.</p>
+  <p class="lead">Imagine a real camera person holding a camera and zooming in to follow your mouse as you work on screen. That's exactly what this script does - but it's automatic, inside OBS, every single frame.</p>
 
   <div class="card">
     <div class="card-head"><div class="ci">🖱️</div><div><h3>Mouse Tracking</h3><div class="sub">The core feature</div></div></div>
-    <p>The script watches where your mouse cursor is every frame. It zooms and pans your screen recording so your cursor is always near the centre of the frame. Move your mouse left — the camera follows. Move to the bottom — it follows there too. Smoothly, like a real camera operator.</p>
+    <p>The script watches where your mouse cursor is every frame. It zooms and pans your screen recording so your cursor is always near the centre of the frame. Move your mouse left - the camera follows. Move to the bottom - it follows there too. Smoothly, like a real camera operator.</p>
   </div>
 
   <div class="card">
     <div class="card-head"><div class="ci">✂️</div><div><h3>How it works inside OBS</h3><div class="sub">No magic, just maths</div></div></div>
-    <p>It adds a hidden <strong>crop filter</strong> to your capture source. Every frame, it trims the edges of your screen so that a zoomed-in window is what remains. OBS stretches that window to fill your canvas — that's the zoom. The crop shifts to follow your mouse — that's the pan.</p>
+    <p>It adds a hidden <strong>crop filter</strong> to your capture source. Every frame, it trims the edges of your screen so that a zoomed-in window is what remains. OBS stretches that window to fill your canvas - that's the zoom. The crop shifts to follow your mouse - that's the pan.</p>
     <p>Nothing is recorded twice. No post-processing needed. What you see in the OBS preview is exactly what gets recorded or streamed.</p>
   </div>
 
   <div class="card">
     <div class="card-head"><div class="ci">📱</div><div><h3>Perfect for vertical content</h3><div class="sub">YouTube Shorts · Instagram Reels · TikTok</div></div></div>
-    <p>You might record your screen for YouTube (wide, 16:9) and also want the same session as a vertical (9:16) video for Reels. This script handles the vertical crop automatically so you record both formats in one take — with the camera intelligently following your mouse so viewers always see the right part of your screen.</p>
+    <p>You might record your screen for YouTube (wide, 16:9) and also want the same session as a vertical (9:16) video for Reels. This script handles the vertical crop automatically so you record both formats in one take - with the camera intelligently following your mouse so viewers always see the right part of your screen.</p>
   </div>
 
   <div class="co tip">
     <div class="co-i">💡</div>
-    <p><strong>In one sentence:</strong> You record your screen normally. When this script is on, OBS zooms in and pans around to follow your mouse — making your recording look cinematic and easy to follow without you doing anything extra.</p>
+    <p><strong>In one sentence:</strong> You record your screen normally. When this script is on, OBS zooms in and pans around to follow your mouse - making your recording look cinematic and easy to follow without you doing anything extra.</p>
   </div>
 </div>
 
@@ -174,14 +174,14 @@ footer a{color:var(--accent2);text-decoration:none}
       <div class="snum">1</div>
       <div class="sbody">
         <h4>Download the files</h4>
-        <p>Go to the GitHub releases page and download the latest <span class="mono">.zip</span> file. Unzip it anywhere — your Desktop is fine.</p>
+        <p>Go to the GitHub releases page and download the latest <span class="mono">.zip</span> file. Unzip it anywhere - your Desktop is fine.</p>
       </div>
     </div>
     <div class="step">
       <div class="snum">2</div>
       <div class="sbody">
         <h4>Run the installer</h4>
-        <p>Run <span class="mono">ProAutoZoom_v1.0_Setup.exe</span> — it automatically installs the script into your OBS scripts folder, then shows you the next steps. No manual file copying needed.</p>
+        <p>Run <span class="mono">ProAutoZoomUltimate_v1.0_Setup.exe</span> - it automatically installs the script into your OBS scripts folder, then shows you the next steps. No manual file copying needed.</p>
         <div class="co warn" style="margin-top:.75rem">
           <div class="co-i">⚠️</div>
           <p>Windows may ask "Do you want to allow this app to make changes?" Click <strong>Yes</strong>. The installer only copies one file to your OBS scripts folder. You can open it in Notepad to read exactly what it does.</p>
@@ -199,13 +199,13 @@ footer a{color:var(--accent2);text-decoration:none}
       <div class="snum">4</div>
       <div class="sbody">
         <h4>Add the script</h4>
-        <p>Click the <strong>+</strong> button (bottom left of the Scripts window). The scripts folder that opened in step 2 — select <span class="mono">Pro_auto_zoom_ultimate_v1.0_community_edition.lua</span> and click <strong>Open</strong>. The script settings appear on the right immediately.</p>
+        <p>Click the <strong>+</strong> button (bottom left of the Scripts window). The scripts folder that opened in step 2 - select <span class="mono">Pro_auto_zoom_ultimate_v1.0.lua</span> and click <strong>Open</strong>. The script settings appear on the right immediately.</p>
       </div>
     </div>
     <div class="step">
       <div class="snum">5</div>
       <div class="sbody">
-        <h4>Done — the script loads automatically from now on ✓</h4>
+        <h4>Done - the script loads automatically from now on ✓</h4>
         <p>Every time OBS opens, this script loads automatically. No need to add it again.</p>
       </div>
     </div>
@@ -213,7 +213,7 @@ footer a{color:var(--accent2);text-decoration:none}
 
   <div class="co info">
     <div class="co-i">ℹ️</div>
-    <p><strong>Manual install (no installer):</strong> Copy <span class="mono">Pro_auto_zoom_ultimate_v1.0_community_edition.lua</span> to <span class="mono">%APPDATA%\obs-studio\basic\scripts\</span> (paste that path into Windows Explorer's address bar), then follow steps 3–4 above.</p>
+    <p><strong>Manual install (no installer):</strong> Copy <span class="mono">Pro_auto_zoom_ultimate_v1.0.lua</span> to any location of your choice and then follow steps 3–4 above.</p>
   </div>
 </div>
 
@@ -228,7 +228,7 @@ footer a{color:var(--accent2);text-decoration:none}
       <div class="snum">1</div>
       <div class="sbody">
         <h4>Pick your Capture Source</h4>
-        <p>In the script settings (right side of the Scripts window), find the <strong>Capture Source</strong> dropdown. Click it and select your screen/monitor/game capture source — the one you want the zoom to work on.</p>
+        <p>In the script settings (right side of the Scripts window), find the <strong>Capture Source</strong> dropdown. Click it and select your screen/monitor/game capture source - the one you want the zoom to work on.</p>
         <div class="co tip" style="margin-top:.75rem">
           <div class="co-i">💡</div>
           <p>Not sure which source? Look at your OBS scene. The one named something like <strong>"Display Capture"</strong> or <strong>"Monitor Capture"</strong> is usually it.</p>
@@ -239,7 +239,7 @@ footer a{color:var(--accent2);text-decoration:none}
       <div class="snum">2</div>
       <div class="sbody">
         <h4>Pick your Detected Monitor</h4>
-        <p>Under <strong>Monitor &amp; Display Settings</strong>, click the <strong>Detected Monitor</strong> dropdown. It lists every monitor connected to your PC — pick the one your capture source is recording from.</p>
+        <p>Under <strong>Monitor &amp; Display Settings</strong>, click the <strong>Detected Monitor</strong> dropdown. It lists every monitor connected to your PC - pick the one your capture source is recording from.</p>
         <div class="co warn" style="margin-top:.75rem">
           <div class="co-i">⚠️</div>
           <p>This step is <strong>required</strong>. The script needs to know exactly where your monitor sits in Windows to map your cursor position correctly. Without it, the hotkey won't activate and you'll see a warning in the log.</p>
@@ -257,14 +257,14 @@ footer a{color:var(--accent2);text-decoration:none}
       <div class="snum">4</div>
       <div class="sbody">
         <h4>Assign your hotkey</h4>
-        <p>In OBS, go to <strong>Settings → Hotkeys</strong>. Search for <strong>"Pro AutoZoom"</strong>. Assign a key to <strong>Toggle Camera</strong> — this is what turns the zoom on and off. Something like <kbd>F9</kbd> works well.</p>
+        <p>In OBS, go to <strong>Settings → Hotkeys</strong>. Search for <strong>"Pro Autozoom Ultimate"</strong>. Assign a key to <strong>Toggle Camera</strong> - this is what turns the zoom on and off. Something like <kbd>F9</kbd> works well.</p>
       </div>
     </div>
     <div class="step">
       <div class="snum">5</div>
       <div class="sbody">
         <h4>Press your hotkey and move your mouse!</h4>
-        <p>Press the <strong>Toggle Camera</strong> hotkey. Move your mouse — watch the OBS preview zoom in and follow your cursor in real time. Press the hotkey again to turn it off and return to the full-screen view.</p>
+        <p>Press the <strong>Toggle Camera</strong> hotkey. Move your mouse - watch the OBS preview zoom in and follow your cursor in real time. Press the hotkey again to turn it off and return to the full-screen view.</p>
       </div>
     </div>
   </div>
@@ -274,14 +274,14 @@ footer a{color:var(--accent2);text-decoration:none}
 <div class="section" id="settings">
   <div class="section-label">Settings Reference</div>
   <h2>Every single setting explained</h2>
-  <p class="lead">Here's what every control in the script does — in plain language. Settings are shown in the same order they appear in OBS.</p>
+  <p class="lead">Here's what every control in the script does - in plain language. Settings are shown in the same order they appear in OBS.</p>
 
   <h3 class="sub-head">🎥 Source &amp; Layout</h3>
   <div class="stbl">
 
     <div class="srow">
       <div class="sname">Capture Source<span class="styp">dropdown</span></div>
-      <div class="sdesc"><strong>Which OBS source should the zoom apply to?</strong> Pick your monitor, window, or game capture source. This is the source that gets cropped and zoomed to follow your mouse. If your source doesn't appear, make sure it's a Monitor Capture, Window Capture, or Game Capture type — not a webcam, image, or browser source.</div>
+      <div class="sdesc"><strong>Which OBS source should the zoom apply to?</strong> Pick your monitor, window, or game capture source. This is the source that gets cropped and zoomed to follow your mouse. If your source doesn't appear, make sure it's a Monitor Capture, Window Capture, or Game Capture type - not a webcam, image, or browser source.</div>
     </div>
 
     <div class="srow">
@@ -296,7 +296,7 @@ footer a{color:var(--accent2);text-decoration:none}
 
     <div class="srow">
       <div class="sname">Enable Manual Canvas Override<span class="styp">checkbox</span><span class="sdef">default: off</span></div>
-      <div class="sdesc"><strong>Only turn this on if you use a separate vertical canvas plugin like Aitum Vertical.</strong> Normally the script reads your canvas size from OBS automatically — leave this off and everything just works. If you use Aitum Vertical, OBS's scripting API can't report that separate canvas's size, so the script would read your main 16:9 canvas and produce a squashed image. Tick this box and enter your actual canvas width and height to fix it.</div>
+      <div class="sdesc"><strong>Only turn this on if you use a separate vertical canvas plugin like Aitum Vertical.</strong> Normally the script reads your canvas size from OBS automatically - leave this off and everything just works. If you use Aitum Vertical, OBS's scripting API can't report that separate canvas's size, so the script would read your main 16:9 canvas and produce a squashed image. Tick this box and enter your actual canvas width and height to fix it.</div>
     </div>
 
     <div class="srow">
@@ -316,12 +316,12 @@ footer a{color:var(--accent2);text-decoration:none}
 
     <div class="srow">
       <div class="sname">Detected Monitor<span class="styp">dropdown</span><span class="sdef" style="color:var(--yellow);">⚠️ required</span></div>
-      <div class="sdesc"><strong>Which physical monitor is being captured?</strong> The script reads your mouse's real coordinates from Windows and maps them onto your recorded image. To do that correctly it needs to know exactly where your monitor sits in your Windows display layout. Pick the monitor that matches your capture source. The format is:<br><br><span class="mono">Monitor 1 — 1920×1080 @ (0,0) (Primary)</span><br><br>That means: Monitor 1, 1920px wide, 1080px tall, at position 0,0 in Windows, and it's your main display.</div>
+      <div class="sdesc"><strong>Which physical monitor is being captured?</strong> The script reads your mouse's real coordinates from Windows and maps them onto your recorded image. To do that correctly it needs to know exactly where your monitor sits in your Windows display layout. Pick the monitor that matches your capture source. The format is:<br><br><span class="mono">Monitor 1 - 1920×1080 @ (0,0) (Primary)</span><br><br>That means: Monitor 1, 1920px wide, 1080px tall, at position 0,0 in Windows, and it's your main display.</div>
     </div>
 
     <div class="srow">
       <div class="sname">Enable Manual Monitor Override<span class="styp">checkbox</span><span class="sdef">default: off</span></div>
-      <div class="sdesc"><strong>Advanced: type in your own monitor dimensions instead of using the auto-detected ones.</strong> Leave this off unless the auto-detected values are wrong. When ticked, four fields appear for Width, Height, X Offset, and Y Offset — these let you correct the geometry for unusual multi-monitor setups where auto-detect fails.</div>
+      <div class="sdesc"><strong>Advanced: type in your own monitor dimensions instead of using the auto-detected ones.</strong> Leave this off unless the auto-detected values are wrong. When ticked, four fields appear for Width, Height, X Offset, and Y Offset - these let you correct the geometry for unusual multi-monitor setups where auto-detect fails.</div>
     </div>
 
   </div>
@@ -337,24 +337,24 @@ footer a{color:var(--accent2);text-decoration:none}
     <div class="srow">
       <div class="sname">Base Zoom Factor<span class="styp">slider · 1.0–5.0</span><span class="sdef">default: 2.0</span></div>
       <div class="sdesc"><strong>How much does the camera zoom in?</strong> Think of it like a magnifying glass strength.<br><br>
-        <strong>1.0</strong> = no zoom (full screen visible — tracking on but no magnification)<br>
-        <strong>2.0</strong> = 2× zoom — you see half the screen. A great starting point.<br>
-        <strong>3.0</strong> = 3× zoom — you see a third of the screen. Good for detailed work.<br>
-        <strong>5.0</strong> = 5× zoom — very close up. Can feel overwhelming if you move fast.<br><br>
+        <strong>1.0</strong> = no zoom (full screen visible - tracking on but no magnification)<br>
+        <strong>2.0</strong> = 2× zoom - you see half the screen. A great starting point.<br>
+        <strong>3.0</strong> = 3× zoom - you see a third of the screen. Good for detailed work.<br>
+        <strong>5.0</strong> = 5× zoom - very close up. Can feel overwhelming if you move fast.<br><br>
         Higher zoom = less of your screen is visible at once, but what you do see is much larger. Start at 2.0 and adjust.</div>
     </div>
 
     <div class="srow">
       <div class="sname">Punch Zoom<span class="styp">slider · 1.0–10.0</span><span class="sdef">default: 4.0</span></div>
-      <div class="sdesc"><strong>How much extra zoom when you hold the Punch Zoom hotkey?</strong> While you hold the Punch key, the camera zooms in to this level instead of Base Zoom. Release and it eases back to normal. Use it to draw attention to something specific — a single button, a line of code, a field in a form. Should be set higher than your Base Zoom. Default is 4.0 (4× while held).</div>
+      <div class="sdesc"><strong>How much extra zoom when you hold the Punch Zoom hotkey?</strong> While you hold the Punch key, the camera zooms in to this level instead of Base Zoom. Release and it eases back to normal. Use it to draw attention to something specific - a single button, a line of code, a field in a form. Should be set higher than your Base Zoom. Default is 4.0 (4× while held).</div>
     </div>
 
     <div class="srow">
       <div class="sname">Smoothness<span class="styp">slider · 0.01–0.50</span><span class="sdef">default: 0.12</span></div>
       <div class="sdesc"><strong>How quickly does the camera glide to follow your mouse?</strong> This is a speed multiplier applied every frame.<br><br>
         <strong>Lower number = slower and smoother.</strong> Higher number = faster and snappier.<br><br>
-        <strong>0.04–0.08:</strong> Very cinematic, lazy-camera feel — great for presentations.<br>
-        <strong>0.12:</strong> Default — smooth and responsive.<br>
+        <strong>0.04–0.08:</strong> Very cinematic, lazy-camera feel - great for presentations.<br>
+        <strong>0.12:</strong> Default - smooth and responsive.<br>
         <strong>0.25+:</strong> Snappy, almost instant. Can look jittery if you move your mouse quickly.<br><br>
         Important: lower smoothness often looks <em>more</em> professional on video, not worse. Don't be afraid to go low.</div>
     </div>
@@ -362,8 +362,8 @@ footer a{color:var(--accent2);text-decoration:none}
     <div class="srow">
       <div class="sname">Deadzone (%)<span class="styp">slider · 0–40</span><span class="sdef">default: 15</span></div>
       <div class="sdesc"><strong>A "calm zone" in the middle where small mouse movements don't move the camera.</strong> Imagine a box in the centre of your screen. As long as your mouse stays inside that box, the camera stays still. The moment your cursor leaves the box, the camera starts following. This stops the camera from jiggling every time you make small accidental movements.<br><br>
-        <strong>0%:</strong> No calm zone — camera follows every tiny twitch (can look shaky).<br>
-        <strong>15%:</strong> Default — a comfortable middle ground.<br>
+        <strong>0%:</strong> No calm zone - camera follows every tiny twitch (can look shaky).<br>
+        <strong>15%:</strong> Default - a comfortable middle ground.<br>
         <strong>30%+:</strong> Very stable camera that only moves when you go far from centre.</div>
     </div>
 
@@ -379,7 +379,7 @@ footer a{color:var(--accent2);text-decoration:none}
 
     <div class="srow">
       <div class="sname">Debug Mode<span class="styp">checkbox</span><span class="sdef">default: off</span></div>
-      <div class="sdesc"><strong>Turns on detailed logging — for troubleshooting only.</strong> When ticked, the script writes a line to the OBS log every time the camera moves, a setting changes, or a hotkey is pressed. View the log at <strong>Tools → Scripts → the log icon</strong>. Turn this <strong>off</strong> during normal use — it generates a lot of text and slightly increases CPU usage. Only turn it on if something isn't working and you want to diagnose why.</div>
+      <div class="sdesc"><strong>Turns on detailed logging - for troubleshooting only.</strong> When ticked, the script writes a line to the OBS log every time the camera moves, a setting changes, or a hotkey is pressed. View the log at <strong>Tools → Scripts → the log icon</strong>. Turn this <strong>off</strong> during normal use - it generates a lot of text and slightly increases CPU usage. Only turn it on if something isn't working and you want to diagnose why.</div>
     </div>
 
     <div class="srow">
@@ -392,26 +392,26 @@ footer a{color:var(--accent2);text-decoration:none}
   <h3 class="sub-head">🎯 Mouse Indicator</h3>
   <div class="co info">
     <div class="co-i">ℹ️</div>
-    <p>The Mouse Indicator is an optional <strong>glowing ring that appears around your cursor</strong> in the recording. Viewers can see exactly where your mouse is at a glance. The script creates and controls this as an OBS source automatically — you don't set anything up manually.</p>
+    <p>The Mouse Indicator is an optional <strong>glowing ring that appears around your cursor</strong> in the recording. Viewers can see exactly where your mouse is at a glance. The script creates and controls this as an OBS source automatically - you don't set anything up manually.</p>
   </div>
   <div class="stbl">
 
     <div class="srow">
       <div class="sname">Visibility<span class="styp">dropdown</span><span class="sdef">default: Off</span></div>
       <div class="sdesc"><strong>When should the ring appear?</strong><br><br>
-        <strong>Off</strong> — no indicator. (The color/opacity/size controls disappear since they'd do nothing.)<br>
-        <strong>Always On</strong> — the ring is always visible while tracking is active.<br>
-        <strong>Hotkey Triggered</strong> — the ring only appears when you press the Toggle Pointer hotkey. Good for showing it only during key moments.</div>
+        <strong>Off</strong> - no indicator. (The color/opacity/size controls disappear since they'd do nothing.)<br>
+        <strong>Always On</strong> - the ring is always visible while tracking is active.<br>
+        <strong>Hotkey Triggered</strong> - the ring only appears when you press the Toggle Pointer hotkey. Good for showing it only during key moments.</div>
     </div>
 
     <div class="srow">
       <div class="sname">Ring Color<span class="styp">colour picker</span><span class="sdef">default: yellow</span></div>
-      <div class="sdesc"><strong>What colour should the ring be?</strong> Click the colour box to open a colour picker. Yellow is the default because it's visible on most backgrounds. Pick anything that contrasts with your typical screen content — bright colours like yellow, cyan, or white work best.</div>
+      <div class="sdesc"><strong>What colour should the ring be?</strong> Click the colour box to open a colour picker. Yellow is the default because it's visible on most backgrounds. Pick anything that contrasts with your typical screen content - bright colours like yellow, cyan, or white work best.</div>
     </div>
 
     <div class="srow">
       <div class="sname">Ring Opacity (%)<span class="styp">slider · 10–100</span><span class="sdef">default: 70%</span></div>
-      <div class="sdesc"><strong>How transparent should the ring be?</strong> 100% = fully solid. 10% = barely visible. 70% (default) is a good balance — visible but not distracting.</div>
+      <div class="sdesc"><strong>How transparent should the ring be?</strong> 100% = fully solid. 10% = barely visible. 70% (default) is a good balance - visible but not distracting.</div>
     </div>
 
     <div class="srow">
@@ -431,20 +431,20 @@ footer a{color:var(--accent2);text-decoration:none}
 <div class="section" id="hotkeys">
   <div class="section-label">Hotkeys</div>
   <h2>Keyboard shortcuts</h2>
-  <p class="lead">There are four hotkeys. Assign them in OBS under <strong>Settings → Hotkeys</strong> — search for <strong>"Pro AutoZoom"</strong>.</p>
+  <p class="lead">There are four hotkeys. Assign them in OBS under <strong>Settings → Hotkeys</strong> - search for <strong>"Pro Autozoom Ultimate"</strong>.</p>
 
   <div class="hkgrid">
     <div class="hkcard">
       <div class="hkname">🎬 Toggle Camera</div>
-      <p>The main switch. Press once to <strong>turn tracking ON</strong>. Press again to <strong>turn it OFF</strong> and return to the normal full-screen view instantly. This is the hotkey you'll use most — assign it somewhere easy like <kbd>F9</kbd>.</p>
+      <p>The main switch. Press once to <strong>turn tracking ON</strong>. Press again to <strong>turn it OFF</strong> and return to the normal full-screen view instantly. This is the hotkey you'll use most - assign it somewhere easy like <kbd>F9</kbd>.</p>
     </div>
     <div class="hkcard">
       <div class="hkname">🔍 Hold for Detail Zoom (Punch)</div>
-      <p><strong>Hold</strong> this key to zoom in tighter (to your Punch Zoom level). <strong>Release</strong> and it smoothly eases back to Base Zoom. Perfect for highlighting a specific button, line of code, or cell in a spreadsheet. It's a hold key — not a toggle.</p>
+      <p><strong>Hold</strong> this key to zoom in tighter (to your Punch Zoom level). <strong>Release</strong> and it smoothly eases back to Base Zoom. Perfect for highlighting a specific button, line of code, or cell in a spreadsheet. It's a hold key - not a toggle.</p>
     </div>
     <div class="hkcard">
       <div class="hkname">⏸️ Hold to Freeze Camera</div>
-      <p><strong>Hold</strong> this key to lock the camera — it stops following your mouse. <strong>Release</strong> and tracking resumes. Use it when you're about to move your mouse far away (like scrolling a page) but want viewers to keep looking at what's currently on screen.</p>
+      <p><strong>Hold</strong> this key to lock the camera - it stops following your mouse. <strong>Release</strong> and tracking resumes. Use it when you're about to move your mouse far away (like scrolling a page) but want viewers to keep looking at what's currently on screen.</p>
     </div>
     <div class="hkcard">
       <div class="hkname">🎯 Toggle Pointer</div>
@@ -454,7 +454,7 @@ footer a{color:var(--accent2);text-decoration:none}
 
   <div class="co tip">
     <div class="co-i">💡</div>
-    <p><strong>Hotkeys not saving?</strong> After assigning keys in OBS Settings, make sure to click <strong>Apply</strong> or <strong>OK</strong>. OBS only saves hotkeys when you confirm the Settings dialog — just assigning and closing isn't enough.</p>
+    <p><strong>Hotkeys not saving?</strong> After assigning keys in OBS Settings, make sure to click <strong>Apply</strong> or <strong>OK</strong>. OBS only saves hotkeys when you confirm the Settings dialog - just assigning and closing isn't enough.</p>
   </div>
 </div>
 
@@ -462,7 +462,7 @@ footer a{color:var(--accent2);text-decoration:none}
 <div class="section" id="layouts">
   <div class="section-label">Canvas Layouts</div>
   <h2>Choosing the right layout</h2>
-  <p class="lead">The Canvas Layout tells the script where on your canvas the screen-share lives — so it knows which area to zoom and which to leave alone (like a webcam strip).</p>
+  <p class="lead">The Canvas Layout tells the script where on your canvas the screen-share lives - so it knows which area to zoom and which to leave alone (like a webcam strip).</p>
 
   <div class="lgrid">
     <div class="lp">
@@ -476,7 +476,7 @@ footer a{color:var(--accent2);text-decoration:none}
         <div class="lb lw">📷 Webcam (top)</div>
         <div class="lb ls" style="padding:.9rem .7rem;">🖥️ Screen Share (bottom)<br>← zoom works here →</div>
       </div>
-      <p>Webcam at the top, screen share below. <strong>Perfect for vertical 9:16 content</strong> — your face is above your screen recording. Set Webcam Height to match your webcam's pixel height in OBS.</p>
+      <p>Webcam at the top, screen share below. <strong>Perfect for vertical 9:16 content</strong> - your face is above your screen recording. Set Webcam Height to match your webcam's pixel height in OBS.</p>
     </div>
     <div class="lp">
       <h4>Split: Screen Top, Webcam Bottom</h4>
@@ -484,7 +484,7 @@ footer a{color:var(--accent2);text-decoration:none}
         <div class="lb ls" style="padding:.9rem .7rem;">🖥️ Screen Share (top)<br>← zoom works here →</div>
         <div class="lb lw">📷 Webcam (bottom)</div>
       </div>
-      <p>Same as above but flipped — screen share on top, webcam below. Less common for vertical content but useful for certain stream layouts.</p>
+      <p>Same as above but flipped - screen share on top, webcam below. Less common for vertical content but useful for certain stream layouts.</p>
     </div>
     <div class="lp">
       <h4>Ultrawide Center Strip</h4>
@@ -507,18 +507,18 @@ footer a{color:var(--accent2);text-decoration:none}
 <div class="section" id="vertical">
   <div class="section-label">Vertical Video</div>
   <h2>Recording vertical content (9:16)</h2>
-  <p class="lead">For people producing Reels, Shorts, or TikTok — especially if you use Aitum Vertical or a similar plugin to create a separate vertical canvas.</p>
+  <p class="lead">For people producing Reels, Shorts, or TikTok - especially if you use Aitum Vertical or a similar plugin to create a separate vertical canvas.</p>
 
   <div class="card">
     <div class="card-head"><div class="ci">📐</div><div><h3>Why vertical needs special treatment</h3></div></div>
     <p>Your monitor is wide (1920×1080). Your vertical canvas is tall (1080×1920). When the script zooms into a wide monitor to fill a tall canvas, it needs to cut out a slice that has the correct tall proportions. If it gets the canvas size wrong, the slice is the wrong shape and the image looks squashed horizontally.</p>
-    <p>The script calculates the correct shape automatically — but it needs to know the exact size of your output canvas to do so.</p>
+    <p>The script calculates the correct shape automatically - but it needs to know the exact size of your output canvas to do so.</p>
   </div>
 
   <div class="card">
     <div class="card-head"><div class="ci">🔄</div><div><h3>Using Aitum Vertical (or a similar plugin)</h3></div></div>
-    <p>Aitum Vertical creates a completely separate vertical canvas inside OBS. Unfortunately OBS's scripting API can only see your <strong>main</strong> canvas — it can't see Aitum's separate canvas. So if the script tries to auto-detect the size, it reads your 16:9 main canvas and gets the wrong answer.</p>
-    <p style="margin-top:.5rem;"><strong>The fix — four steps:</strong></p>
+    <p>Aitum Vertical creates a completely separate vertical canvas inside OBS. Unfortunately OBS's scripting API can only see your <strong>main</strong> canvas - it can't see Aitum's separate canvas. So if the script tries to auto-detect the size, it reads your 16:9 main canvas and gets the wrong answer.</p>
+    <p style="margin-top:.5rem;"><strong>The fix - four steps:</strong></p>
     <ol class="plain">
       <li>Tick <strong>Enable Manual Canvas Override</strong> in Source &amp; Layout.</li>
       <li>Set <strong>Vertical Canvas Width</strong> to <strong>1080</strong>.</li>
@@ -534,11 +534,11 @@ footer a{color:var(--accent2);text-decoration:none}
       <li><strong>Position X:</strong> 0 &nbsp; <strong>Position Y:</strong> [your webcam height, e.g. 608]</li>
       <li><strong>Size Width:</strong> 1080 &nbsp; <strong>Size Height:</strong> [1920 − webcam height, e.g. 1312]</li>
       <li><strong>Bounds type:</strong> Fit &nbsp; <strong>Bounds Width:</strong> 1080 &nbsp; <strong>Bounds Height:</strong> 1312</li>
-      <li><strong>Crop (at the bottom of the Transform dialog):</strong> all 0 — the script's filter handles all cropping, don't set this manually.</li>
+      <li><strong>Crop (at the bottom of the Transform dialog):</strong> all 0 - the script's filter handles all cropping, don't set this manually.</li>
     </ul>
     <div class="co tip" style="margin-top:1rem">
       <div class="co-i">💡</div>
-      <p>Check that the script's crop filter (<span class="mono">CoreAutoZoom_Crop</span>, found in Filters on your source) has <strong>Relative: ticked</strong>. This makes the crop reduce the source's actual output size, which is what allows Fit bounds to work correctly without distortion.</p>
+      <p>Check that the script's crop filter (<span class="mono">CoreAutoZoomUltimate_Crop</span>, found in Filters on your source) has <strong>Relative: ticked</strong>. This makes the crop reduce the source's actual output size, which is what allows Fit bounds to work correctly without distortion.</p>
     </div>
   </div>
 
@@ -546,7 +546,7 @@ footer a{color:var(--accent2);text-decoration:none}
     <div class="card-head"><div class="ci">🩺</div><div><h3>Diagnosing the squash with the canvas diagnostic</h3></div></div>
     <p>Not sure if you need the manual override? Turn on <strong>Debug Mode</strong>, make any settings change, then open <strong>Tools → Scripts → the log icon</strong>. Look for a line like:</p>
     <div class="codebox">CANVAS DIAG: OBS API base=1920x1080 | script target=1080x1920 (webcam 608px, override=true)</div>
-    <p>If <strong>OBS API base</strong> shows 1920×1080 while you're producing vertical content, the auto-read is seeing the wrong canvas — enable the manual override. If it shows 1080×1920, auto-read is working and you don't need the override.</p>
+    <p>If <strong>OBS API base</strong> shows 1920×1080 while you're producing vertical content, the auto-read is seeing the wrong canvas - enable the manual override. If it shows 1080×1920, auto-read is working and you don't need the override.</p>
     <p style="margin-top:.5rem;">Also check the <strong>OutRatio</strong> and <strong>TargetRatio</strong> values in the CROP log lines. If they match (e.g. both <span class="mono">0.823</span>), the crop shape is correct and the image should look undistorted.</p>
   </div>
 </div>
@@ -564,7 +564,7 @@ footer a{color:var(--accent2);text-decoration:none}
       <ol class="plain">
         <li><strong>No monitor selected.</strong> Go to Monitor &amp; Display Settings → Detected Monitor → pick your monitor. This is required.</li>
         <li><strong>"Enable Camera Tracking" is unticked.</strong> Go to Camera Engine → make sure it's ticked.</li>
-        <li><strong>Hotkey wasn't saved.</strong> Go to OBS Settings → Hotkeys → search "Pro AutoZoom" → assign the key → click <strong>Apply</strong> → click <strong>OK</strong>.</li>
+        <li><strong>Hotkey wasn't saved.</strong> Go to OBS Settings → Hotkeys → search "Pro Autozoom Ultimate" → assign the key → click <strong>Apply</strong> → click <strong>OK</strong>.</li>
       </ol>
     </div>
   </div>
@@ -592,9 +592,9 @@ footer a{color:var(--accent2);text-decoration:none}
     <div class="acc-a">
       Try these adjustments in Camera Engine:
       <ul class="plain">
-        <li><strong>Lower the Smoothness value</strong> (e.g. from 0.12 to 0.06). Lower = smoother, slower camera movement — this is what you want.</li>
+        <li><strong>Lower the Smoothness value</strong> (e.g. from 0.12 to 0.06). Lower = smoother, slower camera movement - this is what you want.</li>
         <li><strong>Increase the Deadzone</strong> (e.g. from 15 to 25). A larger calm zone stops the camera reacting to small accidental mouse movements.</li>
-        <li><strong>Lower the Base Zoom Factor.</strong> Higher zoom amplifies every pan — reducing it makes movement feel smaller and smoother.</li>
+        <li><strong>Lower the Base Zoom Factor.</strong> Higher zoom amplifies every pan - reducing it makes movement feel smaller and smoother.</li>
       </ul>
     </div>
   </div>
@@ -602,13 +602,13 @@ footer a{color:var(--accent2);text-decoration:none}
   <div class="acc-item">
     <div class="acc-q">The script log keeps filling up with identical lines even when I'm not moving</div>
     <div class="acc-a">
-      This was a known bug in earlier versions. It's fixed in v1.0 — the script now detects when the camera has settled and goes silent.<br><br>
+      This was a known bug in earlier versions. It's fixed in v1.0 - the script now detects when the camera has settled and goes silent.<br><br>
       If you're on v1.0 and still see this, make sure <strong>Debug Mode is turned off</strong>. Most tick logs only appear with Debug Mode on.
     </div>
   </div>
 
   <div class="acc-item">
-    <div class="acc-q">I see a filter called "CoreAutoZoom_Crop" on my source — is that normal?</div>
+    <div class="acc-q">I see a filter called "CoreAutoZoomUltimate_Crop" on my source - is that normal?</div>
     <div class="acc-a">
       Yes, completely normal. The script creates this filter automatically on your selected source. It adjusts the crop values every frame to move the camera. <strong>Do not delete it</strong> while the script is running. When the script is removed or disabled, it cleans up the filter automatically.
     </div>
@@ -629,18 +629,12 @@ footer a{color:var(--accent2);text-decoration:none}
   <div class="acc-item">
     <div class="acc-q">How do I uninstall the script?</div>
     <div class="acc-a">
-      <strong>Easy:</strong> Go to Windows <strong>Settings → Apps</strong>, search for <strong>Pro AutoZoom</strong>, and click Uninstall. Or run the uninstaller from <span class="mono">%APPDATA%\obs-studio\basic\scripts\ProAutoZoom\</span>.<br><br>
+      <strong>Easy:</strong> Go to Windows <strong>Settings → Apps</strong>, search for <strong>Pro Autozoom Ultimate</strong>, and click Uninstall. Or run the uninstaller from where you installed.<br><br>
       <strong>Manual:</strong> In OBS → Tools → Scripts → click the script in the list → click the <strong>−</strong> button. Then delete the <span class="mono">.lua</span> file from your scripts folder to clean up completely.<br><br>
-      When the script is removed, it automatically restores your capture source to its normal uncropped view — nothing is left broken.
+      When the script is removed, it automatically restores your capture source to its normal uncropped view - nothing is left broken.
     </div>
   </div>
 
-  <div class="acc-item">
-    <div class="acc-q">The "Made by gipstamusic" button doesn't open my browser</div>
-    <div class="acc-a">
-      The button tries to open <a href="https://lnk.bio/gipstamusic" target="_blank">lnk.bio/gipstamusic</a>. If it doesn't work, click that link directly. The button uses your system's default browser-open command — it's wrapped to never crash OBS if that command is unavailable.
-    </div>
-  </div>
 </div>
 
 <!-- ─────────────────────────── LIMITS ─────────────────────────── -->
@@ -660,7 +654,7 @@ footer a{color:var(--accent2);text-decoration:none}
 
   <div class="card">
     <div class="card-head"><div class="ci">🖱️</div><div><h3>Works best with full-screen captures</h3></div></div>
-    <p>The script maps your cursor to a fixed monitor region. If you use a Window Capture and the captured window is not fullscreen — or if you move/resize it mid-recording — the cursor mapping can drift. Works most reliably with a Monitor Capture or a fullscreen game/app.</p>
+    <p>The script maps your cursor to a fixed monitor region. If you use a Window Capture and the captured window is not fullscreen - or if you move/resize it mid-recording - the cursor mapping can drift. Works most reliably with a Monitor Capture or a fullscreen game/app.</p>
   </div>
 
   <div class="card">
@@ -672,7 +666,7 @@ footer a{color:var(--accent2);text-decoration:none}
 </div><!-- /page -->
 
 <footer>
-  <p>Pro AutoZoom (Ultimate Community Edition) · v1.0 · MIT License</p>
+  <p>Pro Autozoom Ultimate · v1.0 · MIT License</p>
   <p style="margin-top:.4rem;">Made with ❤️ by <a href="https://lnk.bio/gipstamusic" target="_blank">gipstamusic</a></p>
 </footer>
 

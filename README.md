@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/icon.png" width="100" height="100" alt="Pro AutoZoom icon" style="border-radius:20px">
+<img src="assets/icon.png" width="100" height="100" alt="Pro AutoZoom Ultimate icon" style="border-radius:20px">
 
-# Pro AutoZoom — Ultimate Community Edition
+# Pro AutoZoom Ultimate
 
 **The cinematic mouse-tracking zoom engine for OBS Studio.**
 Your camera follows your mouse. Automatically. No editing needed.
@@ -20,13 +20,13 @@ Your camera follows your mouse. Automatically. No editing needed.
 
 ---
 
-![Pro AutoZoom settings panel](assets/screenshot.png)
+![Pro AutoZoom Ultimate settings panel](assets/screenshot.png)
 
 ---
 
 ## What is this?
 
-Pro AutoZoom is a free, open-source **Lua script for OBS Studio** that zooms and pans your screen recording in real time to follow your mouse cursor — like a camera operator automatically tracking your work.
+Pro AutoZoom Ultimate is a free, open-source **Lua script for OBS Studio** that zooms and pans your screen recording in real time to follow your mouse cursor — like a camera operator automatically tracking your work.
 
 You hit a hotkey. The camera turns on. From that point, wherever your mouse goes, the camera follows — smoothly, cinematically, every frame. No post-processing, no editing, no extra software.
 
@@ -57,16 +57,16 @@ You hit a hotkey. The camera turns on. From that point, wherever your mouse goes
 
 ### Install
 
-1. Download `ProAutoZoom_v1.0_Setup.exe` from the [Releases page](https://github.com/gipstamusic/pro-autozoom-ultimate/releases/latest)
+1. Download `ProAutoZoomUltimate_v1.0_Setup.exe` from the [Releases page](https://github.com/gipstamusic/pro-autozoom-ultimate/releases/latest)
 2. Run it — the installer places the script in your OBS scripts folder automatically
-3. In OBS: **Tools → Scripts → +** → select `Pro_auto_zoom_ultimate_v1.0_community_edition.lua`
+3. In OBS: **Tools → Scripts → +** → select `Pro_auto_zoom_ultimate_v1.0.lua`
 
 ### Setup (takes 2 minutes)
 
 1. **Capture Source** — pick your monitor or window capture source from the dropdown
 2. **Detected Monitor** — pick the physical monitor your source is recording *(required)*
 3. **Canvas Layout** — choose `Full Screen Zoom` for standard recording, or a Split layout for vertical content
-4. **Hotkeys** — go to `Settings → Hotkeys`, search `Pro AutoZoom`, assign `Toggle Camera`
+4. **Hotkeys** — go to `Settings → Hotkeys`, search `Pro AutoZoom Ultimate`, assign `Toggle Camera`
 5. Press your hotkey and move your mouse — the camera follows
 
 > **Full setup guide →** [help.html](help.html)
@@ -177,7 +177,7 @@ Turn on **Debug Mode** and check the `CANVAS DIAG` line in the script log to con
 
 ```
 pro-autozoom-ultimate/
-├── Pro_auto_zoom_ultimate_v1.0_community_edition.lua   # The script
+├── Pro_auto_zoom_ultimate_v1.0.lua   # The script
 ├── help.html                                           # Full interactive help guide
 ├── README.md                                           # Readme file
 ├── LICENSE                                             # MIT License
